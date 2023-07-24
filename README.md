@@ -1,17 +1,17 @@
 # MountNTFS
-simple code to read & write Internal Disk NTFS on macOS
+shell script mount disk internal partition 
 
 # Need a support library
-% brew install macfuse
+$ brew install macfuse
 
-% brew install ntfs-3g-mac
+$ brew install ntfs-3g-mac
+
+# Give access to run
+$ chmod 777 ntfsmount.sh
+
+$ chmod 777 ntfsumount.sh
 
 # Run
-./MountNTFS
+$ ./ntfsmount.sh (read and write access )
 
-![mount](https://github.com/mijortsa/MountNTFS/assets/908982/90cd7763-c1c9-46c6-86b1-171998a1a87d)
-
-# Demo Video
-
-https://www.youtube.com/watch?v=9jl_mF42vXM
-
+$ ./ntfsumount.sh (read only access )
